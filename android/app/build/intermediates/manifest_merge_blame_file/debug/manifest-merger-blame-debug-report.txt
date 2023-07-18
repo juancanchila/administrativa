@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.ionic.starter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:41:5-67
+13-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:41:22-64
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->[:capacitor-haptics] C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+14-->[:capacitor-haptics] C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+15    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+15-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+15-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+16    <uses-feature
+16-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+17        android:name="android.hardware.camera"
+17-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+18        android:required="false" />
+18-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+19    <uses-feature
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+20        android:name="android.hardware.camera.front"
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+21        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+22    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+24        android:name="android.hardware.camera.autofocus"
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+27        android:name="android.hardware.camera.flash"
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+30        android:name="android.hardware.screen.landscape"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+33        android:name="android.hardware.wifi"
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+35
+36    <application
+36-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:5:5-37:19
+37        android:allowBackup="true"
+37-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:6:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.8.0] C:\Users\juanc\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:7:9-43
+41        android:label="ipcc"
+41-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:8:9-29
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:9:9-54
+43        android:supportsRtl="true"
+43-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:10:9-35
+44        android:theme="@style/AppTheme" >
+44-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:11:9-40
+45        <activity
+45-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:13:9-26:20
+46            android:name="io.ionic.starter.MainActivity"
+46-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:15:13-57
+47            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+47-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:14:13-129
+48            android:exported="true"
+48-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:19:13-36
+49            android:label="@string/title_activity_main"
+49-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:16:13-56
+50            android:launchMode="singleTask"
+50-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:18:13-44
+51            android:theme="@style/AppTheme.NoActionBarLaunch" >
+51-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:17:13-62
+52            <intent-filter>
+52-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:21:13-24:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:22:17-69
+53-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:22:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:23:17-77
+55-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:23:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <provider
+60            android:name="androidx.core.content.FileProvider"
+60-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:29:13-62
+61            android:authorities="io.ionic.starter.fileprovider"
+61-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:30:13-64
+62            android:exported="false"
+62-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:31:13-37
+63            android:grantUriPermissions="true" >
+63-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:32:13-47
+64            <meta-data
+64-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:33:13-35:64
+65                android:name="android.support.FILE_PROVIDER_PATHS"
+65-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:34:17-67
+66                android:resource="@xml/file_paths" />
+66-->C:\Users\juanc\Desktop\pruebadeconexion\carnet_digital\ipcc-transparente\android\app\src\main\AndroidManifest.xml:35:17-51
+67        </provider>
+68        <provider
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+69            android:name="androidx.startup.InitializationProvider"
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+70            android:authorities="io.ionic.starter.androidx-startup"
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+71            android:exported="false" >
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+72            <meta-data
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+74                android:value="androidx.startup" />
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\juanc\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+75            <meta-data
+75-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\juanc\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+76-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\juanc\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+77                android:value="androidx.startup" />
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\juanc\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+78        </provider>
+79
+80        <activity
+80-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+81            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+81-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+82            android:clearTaskOnLaunch="true"
+82-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+83            android:screenOrientation="sensorLandscape"
+83-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+84            android:stateNotNeeded="true"
+84-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+85            android:theme="@style/zxing_CaptureTheme"
+85-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+86            android:windowSoftInputMode="stateAlwaysHidden" />
+86-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\juanc\.gradle\caches\transforms-3\c620990d6c260a72572b2d617ef2befe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+87    </application>
+88
+89</manifest>

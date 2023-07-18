@@ -1,0 +1,161 @@
+#logo {
+    text-align: center;
+    padding-top: 5%;
+    --ion-background-color: #007b3c;
+    width: 90%;
+    margin: auto;
+   // margin-bottom: 15%;
+}
+#logo_img {
+    width: 325px !important;
+    margin-bottom: 5%;
+    padding: auto;
+
+     }
+.form_login {
+    --text-align: center;
+    --padding-top: 5%;
+    --max-height: 500px !important;
+
+}
+
+.contain {
+
+    text-align: center;
+
+    position: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #262262;
+  }
+  ion-label{
+   display: block;
+   text-align: left;
+   color: white;
+   margin-left: 10%;
+   max-width: 50%;
+
+  }
+  ion-input{
+      color: black;
+      height: 25px;
+      background-color: white;
+      max-width: 50% !important;
+      margin: auto;
+  }
+  ion-item{
+      --min-height: 0 !important;
+      --border-width: 0 0 0 0 !important;
+--inner-border-width: 0 !important;
+--show-full-highlight: 0 !important;
+--show-inset-highlight: 0 !important;
+--padding-bottom : 5% !important;
+
+  }
+  a{
+      text-decoration: none;
+  }
+
+  ion-menu-button{
+    color: white;
+
+
+}
+ion-icon{
+    color: white;
+    font-size: 2rem;
+}
+input{
+    margin-right: 20px;
+    margin-left: 15px;
+    border: none !important;
+    background-color: #262262;
+    color: white;
+}
+input[type="button"] {
+    color: white !important;
+
+}
+
+.background{
+    --background:#ecf0f1 url(../../assets/img/FONDO_LOGIN.jpg) 0 0/100% 100% no-repeat;
+   // background-color:#007b3c;
+  //  --ion-background-color: #007b3c;
+
+}
+
+.header .col {
+   // background-color:lightgrey;
+}
+
+.col {
+  //  border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+    text-align: center;
+    margin-top: 5%;
+}
+.cover {
+    background: #ffffffd4;
+    width: 100%;
+    height: 100%;
+}
+.col:last-child {
+  //  border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+  //  border-bottom: solid 1px grey;
+}
+
+.content {
+    max-width: 50%;
+    min-width: 200px;
+    margin: auto;
+    padding: 5%;
+    border-radius: 25px;
+    background: #007b3c;
+    padding-top: 5%;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+ .button-solid{
+    --ion-background-color: #007b3c;
+}
+.button-native{
+    --background: var(--ion-color-primary, #f8a906) !important;
+    --color: var(--ion-color-primary-contrast, #fff);
+}
+ion-content{
+    // --background:#ecf0f1 url(../../assets/img/FONDO_LOGIN) 0 0/100% 100% repeat;
+     //--background:#ecf0f1 url(../../assets/botones/FONDOENVIO2.png.jpg) 0 0/100% 100% repeat;
+    // --background-size: 50% 50%;
+    // --background:#fFFF;
+
+      min-height: 500px;
+  }
+
+  .ion-page{
+    align-items: center;
+  }
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .content{
+      max-width: 394px;
+      min-width: 200px;
+      margin: auto;
+      padding: 2%;
+      border-radius: 25px;
+      background: #83B551;
+      /* padding-top: 5%; */
+  }
+  }

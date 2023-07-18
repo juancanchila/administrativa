@@ -1,0 +1,35 @@
+ion-toolbar{
+    color: white;
+    --ion-background-color: #5DB5E5;
+
+  }
+
+  ion-button{
+    color: white;
+    --ion-background-color: #5DB5E5 !important;
+
+
+
+  }
+ .button-solid{
+    --ion-background-color: #5DB5E5 !important;
+    --background:  #5DB5E5;
+    --color: var(--ion-color-primary-contrast, #fff);
+}
+
+.ion-page{
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .content[_ngcontent-ahh-c145] {
+    max-width: 394px;
+    min-width: 200px;
+    margin: auto;
+    padding: 2%;
+    border-radius: 25px;
+    background: #007b3c;
+    /* padding-top: 5%; */
+}
+}

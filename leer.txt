@@ -1,0 +1,3 @@
+On Android, orientation can be set by modifying the AndroidManifest.xml and setting android:screenOrientation on the <activity> entry for your main app activity. See the Android Manifest Documentation for details on the possible entries
+
+--***************************

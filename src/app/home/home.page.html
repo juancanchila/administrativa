@@ -1,0 +1,127 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+
+    <ion-buttons>
+      <ion-menu-button class="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<div class="top" >
+<ion-content class="center" scroll-y="false" [fullscreen]="false" >
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Carnet Digital</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div id="logo" padding text-center>
+    <img id="logo_img" src="./assets/img/logo.png">
+  </div>
+
+  <swiper  *ngFor="let listado of listado">
+    <ng-template swiperSlide>
+
+      <div class="content">
+        <div class="marco">
+        <img width="80px" height="80px" [src]="valor+listado.user_picture" class="img" >
+        </div>
+        <h2 *ngIf='listado.field_denominacion_del_cargo.length < 1 '>Nombre del Contratista:</h2>
+        <h2 *ngIf='listado.field_denominacion_del_cargo.length > 1 '>Nombre del Funcionario:</h2>
+        <h1>{{listado.title}}</h1>
+
+        <h2 *ngIf='listado.field_denominacion_del_cargo.length > 1 '>Cargo:</h2>
+        <h1 *ngIf='listado.field_denominacion_del_cargo.length > 1 '>{{listado.field_denominacion_del_cargo}}</h1>
+        <h2  *ngIf="listado.n_contrato !== false ">Número de Contrato:</h2>
+        <h1 *ngIf="listado.n_contrato !== false ">{{listado.n_contrato}}</h1>
+
+
+
+
+        </div>
+
+    </ng-template>
+
+    <ng-template swiperSlide>
+
+      <div class="content">
+        <h2 *ngIf='listado.field_denominacion_del_cargo.length > 1 '>Cargo:</h2>
+        <h1 *ngIf='listado.field_denominacion_del_cargo.length > 1 '>{{listado.field_denominacion_del_cargo}}</h1>
+
+        <h2>Identificación:</h2>
+        <h1>{{listado.field_identificacion
+        }}</h1>
+
+        <h2 *ngIf='listado.field_grado.length > 1 '>Grado:</h2>
+        <h1>{{listado.field_grado}}</h1>
+        <h2 *ngIf='listado.field_codigo.length > 1 '>Código:</h2>
+        <h1>{{listado.field_codigo}}</h1>
+        <h1 *ngIf='listado.field_denominacion_del_cargo === "" ' >Objeto del Contrato :</h1>
+        <div class="full_text">
+         <p *ngIf='listado.field_denominacion_del_cargo === "" '>{{listado.objt_contrato}}</p>
+        </div>
+
+      </div>
+
+    </ng-template>
+
+    <ng-template swiperSlide *ngIf='listado.field_denominacion_del_cargo === "" '>    <div class="content">
+
+      <h1>Proyecto:</h1>
+
+
+      <div class="full_text">
+   <p>{{listado.field_proyecto}}</p>
+  </div>
+
+
+   <h2>Fecha de Inicio de Contrato:</h2>
+   <h1>{{listado.field_fecha_de_inicio}}</h1>
+   <h2>Fecha de Finalización de Contrato :</h2>
+   <h1>{{listado.field_end_date}}</h1>
+
+
+
+ </div></ng-template>
+
+    <ng-template swiperSlide  *ngIf='listado.field_denominacion_del_cargo === "" ' >   <div class="content">
+
+
+      <h1>Verificar al Contratista:</h1>
+
+      <ngx-qrcode [elementType]="tipoElemento" [value]="validar+listado.field_identificacion"> </ngx-qrcode>
+
+      <h5>  <a href="https://vitac.epacartagena.gov.co/contratistas/{{listado.field_identificacion}}"> </a> https://vitac.epacartagena.gov.co/contratistas/{{listado.field_identificacion}} </h5>
+
+    </div></ng-template>
+
+
+    <ng-template swiperSlide  *ngIf='listado.field_denominacion_del_cargo.length > 1' >   <div class="content">
+
+
+      <h1>Verificar al Funcionario:</h1>
+
+      <ngx-qrcode [elementType]="tipoElemento" [value]="planta+listado.field_identificacion"> </ngx-qrcode>
+
+      <h5>  <a href="https://vitac.epacartagena.gov.co/planta/{{listado.field_identificacion}}"> </a> https://vitac.epacartagena.gov.co/planta/{{listado.field_identificacion}} </h5>
+
+    </div></ng-template>
+
+  </swiper>
+
+<div class="olas">   <br>
+
+</div>
+
+</ion-content>
+
+
+</div>
+
+
+
+
+
+

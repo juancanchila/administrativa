@@ -1,0 +1,7 @@
+{
+  "name": "administrativa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,39 @@
+<ion-content padding class="background"  scroll-y="false" [fullscreen]="false">
+  <div class = "cover">
+  <div id="logo" padding text-center>
+    <img id="logo_img" src="./assets/img/logo.png">
+  </div>
+
+
+    <div scroll-y="false"  >
+
+
+
+      <div class="content">
+
+
+
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+
+        <div class="row header">
+          <div class="col">
+            <h1>Usuario</h1>
+
+        </div>
+          <div class="col">       <ion-input formControlName="name" type="text" ></ion-input></div>
+          <div class="col"><h1>Contraseña</h1></div>
+          <div class="col">    <ion-input  formControlName="pass"  type="password" ></ion-input>  </div>
+        </div>
+        <div class="col">
+          <ion-button  type="submit" color="light" >
+          Sign In
+         </ion-button></div>
+
+
+      </form>
+    </div>
+  </div>
+
+
+</div>
+</ion-content>
